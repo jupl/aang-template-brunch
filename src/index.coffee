@@ -1,7 +1,7 @@
 require('sugar')
 jade = require('jade')
 
-module.exports = class AngularTemplateCompiler
+module.exports = class AangTemplateCompiler
   brunchPlugin: yes
   type: 'template'
   extension: 'html'

@@ -1,12 +1,12 @@
 {
-  "name": "angular-template-brunch",
+  "name": "aang-template-brunch",
   "version": "1.7.0",
   "description": "Compile Angular templates",
   "author": "Juan Placencia",
-  "homepage": "https://github.com/jupl/angular-template-brunch",
+  "homepage": "https://github.com/jupl/aang-template-brunch",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jupl/angular-template-brunch.git"
+    "url": "git@github.com:jupl/aang-template-brunch.git"
   },
   "main": "./lib/index",
   "scripts": {

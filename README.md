@@ -1,7 +1,7 @@
-## angular-template-brunch 1.7.0
+## aang-template-brunch 1.7.0
 
-[<img src="https://david-dm.org/jupl/angular-template-brunch.png"/>](https://david-dm.org/jupl/angular-template-brunch)
-[<img src="https://david-dm.org/jupl/angular-template-brunch/dev-status.png"/>](https://david-dm.org/jupl/angular-template-brunch#info=devDependencies)
+[<img src="https://david-dm.org/jupl/aang-template-brunch.png"/>](https://david-dm.org/jupl/aang-template-brunch)
+[<img src="https://david-dm.org/jupl/aang-template-brunch/dev-status.png"/>](https://david-dm.org/jupl/aang-template-brunch#info=devDependencies)
 
 Compile static HTML or Jade files to Angular templates. This plugin scans `.html` or `.jade` files (except in assets) and returns JavaScript in a format similar to this:
 
@@ -40,9 +40,9 @@ A function/regex/string or an array of functions/regexs/strings that can be used
 
 
 ## Usage
-Add `"angular-template-brunch": "x.y.z"` to `package.json` of your brunch app.
+Add `"aang-template-brunch": "x.y.z"` to `package.json` of your brunch app.
 
 Pick a plugin version that corresponds to your minor (y) brunch version.
 
 If you want to use git version of plugin, add
-`"angular-template-brunch": "git+ssh://git@github.com:jupl/angular-template-brunch.git"`.
+`"aang-template-brunch": "git+ssh://git@github.com:jupl/aang-template-brunch.git"`.
