@@ -37,7 +37,7 @@ module.exports = class AangTemplateCompiler
     """
 
   formattedPath: (path) ->
-    path = /(.+)\.(?:html|jade)/.exec(path)[1]
+    path = /(?:app\/)?(.+)/.exec(path)[1]
     try
       path = @options.pathToSrc(path)
     catch

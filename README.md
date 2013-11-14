@@ -1,4 +1,4 @@
-## aang-template-brunch 1.7.0
+## aang-template-brunch 1.7.1
 
 [<img src="https://david-dm.org/jupl/aang-template-brunch.png"/>](https://david-dm.org/jupl/aang-template-brunch)
 [<img src="https://david-dm.org/jupl/aang-template-brunch/dev-status.png"/>](https://david-dm.org/jupl/aang-template-brunch#info=devDependencies)
@@ -7,7 +7,7 @@ Compile static HTML or Jade files to Angular templates. This plugin scans `.html
 
 ```javascript
 angular.module('app').run(['$templateCache', function($templateCache) {
-  $templateCache.put('app/template/header', '<div>Title</div>');
+  $templateCache.put('template/header.html', '<div>Title</div>');
 }]);
 ```
 
@@ -30,7 +30,7 @@ angularTemplate: {
 The name of an established Angular module. This module will be used to access `$templateCache`. The default value is `app`.
 
 ### `pathToSrc`
-A function to be able to transform the path of the file with the extension omitted. (ex: `app/templates/sample`) The default value is a function that just returns the path without modification.
+A function to be able to transform the path of the file. (ex: `app/templates/sample.html`) The default value is a function that just returns the path without modification.
 
 ### `jadeOptions`
 Local data that can be injected into Jade templates when compiling. The default value is an empty object.
