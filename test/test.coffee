@@ -29,7 +29,7 @@ describe 'Plugin', ->
       expect(error).not.to.be.ok
       [moduleName, src, html] = eval(data)
       expect(moduleName).to.equal('app')
-      expect(src).to.equal('app/templates/first')
+      expect(src).to.equal('templates/first.html')
       expect(html).to.equal(content)
       done()
 
@@ -39,7 +39,7 @@ describe 'Plugin', ->
       expect(error).not.to.be.ok
       [moduleName, src, html] = eval(data)
       expect(moduleName).to.equal('app')
-      expect(src).to.equal('app/templates/first')
+      expect(src).to.equal('templates/first.jade')
       expect(html).to.equal('<div>Title</div>')
       done()
 
@@ -54,14 +54,14 @@ describe 'Plugin', ->
       expect(error).not.to.be.ok
       [moduleName, src, html] = eval(data)
       expect(moduleName).to.equal('myApp')
-      expect(src).to.equal('app/templates/second')
+      expect(src).to.equal('templates/second.html')
       expect(html).to.equal(content)
       done()
 
   it 'can modify src parameters', (done) ->
     content = 'div Title'
     angularTemplate = pathToSrc: (path) ->
-      /^app\/(.+)\/template/.exec(path)[1]
+      /^(.+)\/template\.(?:html|jade)/.exec(path)[1]
     @plugin = new Plugin({angularTemplate})
     @plugin.compile content, 'app/templates/second/template.jade', (error, data) ->
       expect(error).not.to.be.ok
@@ -80,7 +80,7 @@ describe 'Plugin', ->
       expect(error).not.to.be.ok
       [moduleName, src, html] = eval(data)
       expect(moduleName).to.equal('app')
-      expect(src).to.equal('app/templates/second')
+      expect(src).to.equal('templates/second.jade')
       expect(html).to.equal('<div>Another Title</div>')
       done()
 
