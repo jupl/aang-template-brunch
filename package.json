@@ -1,6 +1,6 @@
 {
   "name": "aang-template-brunch",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "Compile Angular templates",
   "author": "Juan Placencia",
   "homepage": "https://github.com/jupl/aang-template-brunch",
@@ -14,12 +14,12 @@
     "test": "node_modules/.bin/mocha"
   },
   "dependencies": {
-    "jade": "~0.35.0",
+    "jade": "~1.1.5",
     "sugar": "~1.4.1"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
-    "mocha": "~1.14.0",
+    "mocha": "~1.17.0",
     "chai": "~1.8.0"
   }
 }
