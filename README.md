@@ -1,4 +1,4 @@
-## aang-template-brunch 1.7.4
+## aang-template-brunch 1.7.5
 
 [<img src="https://david-dm.org/jupl/aang-template-brunch.png"/>](https://david-dm.org/jupl/aang-template-brunch)
 [<img src="https://david-dm.org/jupl/aang-template-brunch/dev-status.png"/>](https://david-dm.org/jupl/aang-template-brunch#info=devDependencies)
