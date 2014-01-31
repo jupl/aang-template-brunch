@@ -1,4 +1,4 @@
-## aang-template-brunch 1.7.5
+## aang-template-brunch 1.7.6
 
 [<img src="https://david-dm.org/jupl/aang-template-brunch.png"/>](https://david-dm.org/jupl/aang-template-brunch)
 [<img src="https://david-dm.org/jupl/aang-template-brunch/dev-status.png"/>](https://david-dm.org/jupl/aang-template-brunch#info=devDependencies)
@@ -15,16 +15,18 @@ Make sure you have the module (default is `app`) defined in your JavaScript befo
 
 
 ## Config
-You can change the behavior of this plugin by adding options to `config`. Here is an example with the default options.
+You can change the behavior of this plugin by adding options to `config.plugins`. Here is an example with the default options.
 
 ```javascript
 files: {...},
 ...,
-angularTemplate: {
-  moduleName: 'app',
-  pathToSrc: function(x) { return x },
-  jadeOptions: {},
-  ignore: []
+plugins: {
+  angularTemplate: {
+    moduleName: 'app',
+    pathToSrc: function(x) { return x },
+    jadeOptions: {},
+    ignore: []
+  }
 },
 ....
 ```

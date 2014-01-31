@@ -8,7 +8,7 @@ module.exports = class AangTemplateCompiler
   pattern: /\.(html|jade)$/
 
   constructor: (config) ->
-    @options = Object.create(config.angularTemplate ? null)
+    @options = Object.create(config.plugins?.angularTemplate ? null)
     @options.moduleName ?= 'app'
     @options.pathToSrc ?= (path) -> path
     @options.jadeOptions ?= {}
